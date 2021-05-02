@@ -22,7 +22,7 @@ namespace UserInterface
 
         private void ProductConfirmationUI_Load(object sender, EventArgs e)
         {
-            // Dgw Data çekme fonksiyonu
+            // Dgw Data çekme fonksiyonu 
             GetDataGW();
         }
 

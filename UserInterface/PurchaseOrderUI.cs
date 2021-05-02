@@ -67,7 +67,12 @@ namespace UserInterface
             purchaseOrderManager.Delete(result);
             // Seçili ürün geri iade sistem mesajı
             MessageBox.Show(DwPurchaseOrder.SelectedCells[3].Value + " Adet " + DwPurchaseOrder.SelectedCells[1].Value + " Ürün geri iade edilmiştir.", "İşlem Tamamlandı", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            GetDwDatas();
+            GetDwDatas(); 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
