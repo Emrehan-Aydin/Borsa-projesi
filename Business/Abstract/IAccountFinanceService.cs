@@ -8,7 +8,8 @@ namespace Business.Abstract
 {
     public interface IAccountFinanceService
     {
-        IDataResult<AccountFinance> GetById(int Id);
+        // Account Finance iş modülü servisleri
+        IDataResult<AccountFinance> GetByAccount(int accountId);
         IDataResult<List<AccountFinance>> GetAll();
         IResult Add(AccountFinance accountFinance);
         IResult Update(AccountFinance accountFinance);

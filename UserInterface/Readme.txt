@@ -1,0 +1,1 @@
+﻿Bu class kütüphanesi içerisinde arayüzler bulunmaktadır.

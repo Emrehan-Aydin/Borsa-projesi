@@ -1,6 +1,8 @@
 ﻿using Business.Concrete;
+using Core.Utilities.Results;
 using DataAccess.Concrete.EntityFramework;
 using Entities.Concrete;
+using ShopBusiness;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,36 +25,52 @@ namespace UserInterface
         }
         private void BtnRegister_Click(object sender, EventArgs e)
         {
-            RegisterUI registerUI = new RegisterUI();
+            RegisterUI registerUI = new RegisterUI();  // Kayıt olma forum nesnesi
             registerUI.ShowDialog();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            AccountManager accountManager = new AccountManager(new EfAccountDal());
-            Account account = new Account();
-            account.AccountName = tbAccountName.Text;
-            account.Password = TbPassword.Text;
-            if (accountManager.Get(account).Data==null)
+            var result = checkPerson(1); // Permission değeri 1 olan kontrol 
+            if (result.Success)
             {
-                MessageBox.Show("Kullanıcı adı veya şifre yanlış");
-            }
-            else if(accountManager.Get(account).Data.AccountName==tbAccountName.Text && TbPassword.Text==accountManager.Get(account).Data.Password)
-            {
-                MessageBox.Show("Giriş Başarılı");
-                UserIndexUI userIndexUI = new UserIndexUI();
-                userIndexUI.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Kullanıcı adı veya şifre yanlış");
+                UserIndexUI userIndexUI = new UserIndexUI(result.Data); // UserIndex form nesnesi oluşturulur
+                userIndexUI.ShowDialog(); // formu görüntüle.
             }
         }
 
         private void btnAdminLogin_Click(object sender, EventArgs e)
         {
-            AdminLogin adminLogin = new AdminLogin();
-            adminLogin.ShowDialog();
+            var result = checkPerson(2); // Permission değeri 2 olan kontrol 
+            if (result.Success)
+            {
+                AdminIndexUI adminIndexUI = new AdminIndexUI(result.Data);
+                adminIndexUI.ShowDialog(); // formu görüntüle.
+            }
+        }
+        public IDataResult<Account> checkPerson(int permission)
+        {
+            // kullanıcı kontrolü için Manager nesnesi
+            AccountManager accountManager = new AccountManager(new EfAccountDal());
+            // Girilen kullanıcı bilgileri için oluşturulan nesne
+            Account account = new Account
+            {
+                AccountName = tbAccountName.Text,
+                Password = TbPassword.Text,
+                AccountType = permission
+            };
+            // Böyle bir kullanıcı var mı ? kontrolünü true/false dönen metod 
+            var result = accountManager.Get(account); 
+            if (result.Data == null)
+            {
+                MessageBox.Show("Kullanıcı adı veya şifre yanlış!","Başarısız giriş",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                return result;
+            }
+            else
+            {
+                MessageBox.Show("Giriş Başarılı", "Başarılı giriş", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return result;
+            }
         }
     }
 }

@@ -7,9 +7,8 @@ using System.Text;
 
 namespace DataAccess.Concrete.EntityFramework
 {
+    // AccountInformation için EntityFrameWork veri tabanı ve nesne sınıfı
     public class EfAccountInformationDal : EfEntityRepositoryBase<AccountInformation, BorsaGameContext>, IAccountInformationDal
     {
-
-
     }
 }

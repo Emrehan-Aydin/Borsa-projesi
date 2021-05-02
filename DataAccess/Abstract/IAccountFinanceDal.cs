@@ -6,6 +6,7 @@ using System.Text;
 
 namespace DataAccess.Abstract
 {
+    // AccountFinance için generic referans IEntityRepository tanımlanması
     public interface IAccountFinanceDal : IEntityRepository<AccountFinance>
     {
     }

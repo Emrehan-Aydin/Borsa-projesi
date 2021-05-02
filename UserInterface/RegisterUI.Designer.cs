@@ -29,6 +29,7 @@ namespace UserInterface
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterUI));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -75,7 +76,7 @@ namespace UserInterface
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(35, 81);
+            this.label2.Location = new System.Drawing.Point(35, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 15);
             this.label2.TabIndex = 4;
@@ -93,7 +94,7 @@ namespace UserInterface
             // 
             // TbPassword
             // 
-            this.TbPassword.Location = new System.Drawing.Point(131, 78);
+            this.TbPassword.Location = new System.Drawing.Point(131, 66);
             this.TbPassword.Name = "TbPassword";
             this.TbPassword.PasswordChar = '*';
             this.TbPassword.Size = new System.Drawing.Size(100, 23);
@@ -264,17 +265,22 @@ namespace UserInterface
             // 
             // BtnRegister
             // 
-            this.BtnRegister.BackColor = System.Drawing.Color.White;
+            this.BtnRegister.BackColor = System.Drawing.Color.Transparent;
             this.BtnRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnRegister.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.BtnRegister.FlatAppearance.BorderSize = 0;
+            this.BtnRegister.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BtnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnRegister.Location = new System.Drawing.Point(413, 400);
+            this.BtnRegister.ForeColor = System.Drawing.Color.White;
+            this.BtnRegister.Image = ((System.Drawing.Image)(resources.GetObject("BtnRegister.Image")));
+            this.BtnRegister.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BtnRegister.Location = new System.Drawing.Point(-1, 396);
             this.BtnRegister.Name = "BtnRegister";
             this.BtnRegister.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BtnRegister.Size = new System.Drawing.Size(165, 38);
+            this.BtnRegister.Size = new System.Drawing.Size(598, 58);
             this.BtnRegister.TabIndex = 8;
             this.BtnRegister.Text = "Kayıt Ol";
+            this.BtnRegister.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnRegister.UseVisualStyleBackColor = false;
             this.BtnRegister.Click += new System.EventHandler(this.BtnRegister_Click);
             // 
@@ -282,7 +288,7 @@ namespace UserInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::UserInterface.Properties.Resources.abstr;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(53)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(594, 450);
             this.Controls.Add(this.BtnRegister);

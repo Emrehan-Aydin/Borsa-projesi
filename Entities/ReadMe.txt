@@ -1,0 +1,1 @@
+﻿Bu Class kütüphanesinde program içerisinde kullanılan veritabanı varlıklarının tanımlanması ve InterFace tanımlaması yapılmaktadır.

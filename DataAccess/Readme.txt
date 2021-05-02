@@ -1,0 +1,1 @@
+﻿Veri Tabanı iletişimi back-end kısmı bu kütüphanemizde yer almaktadır.

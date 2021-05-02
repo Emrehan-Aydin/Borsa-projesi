@@ -6,8 +6,10 @@ using System.Text;
 
 namespace DataAccess.Core
 {
+    // EntityRepository Generic Referans İplementesi
     public interface IEntityRepository<T> where T : class, IEntity, new()
     {
+        // Ef Servis fonksiyonları
         List<T> GetAll(Expression<Func<T, bool>> filter = null);
         T Get(Expression<Func<T, bool>> filter);
         void Add(T entity);

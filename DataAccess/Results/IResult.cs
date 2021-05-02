@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Core.Utilities.Results
 {
-    //temel voidler
+    // Sistem mesajları generic Referans
     public interface IResult
     {
         bool Success { get; }

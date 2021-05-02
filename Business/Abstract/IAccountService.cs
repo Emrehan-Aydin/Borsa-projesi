@@ -8,7 +8,6 @@ namespace Business.Abstract
 {
     public interface IAccountService
     {
-        IDataResult<Account> GetById(int Id);
         IDataResult<Account> Get(Account account);
         IDataResult<List<Account>> GetAll();
         IResult Add(Account account);
