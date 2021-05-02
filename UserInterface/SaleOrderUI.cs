@@ -30,7 +30,7 @@ namespace UserInterface
         }
         private void SaleOrderUI_Load(object sender, EventArgs e)
         {
-            GetDataGridView();
+            GetDataGridView(); 
         }
 
         private void GetDataGridView()

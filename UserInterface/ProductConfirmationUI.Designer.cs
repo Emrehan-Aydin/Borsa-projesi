@@ -56,11 +56,11 @@ namespace UserInterface
             this.BtnConfirmation.ForeColor = System.Drawing.Color.White;
             this.BtnConfirmation.Image = ((System.Drawing.Image)(resources.GetObject("BtnConfirmation.Image")));
             this.BtnConfirmation.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnConfirmation.Location = new System.Drawing.Point(0, 316);
+            this.BtnConfirmation.Location = new System.Drawing.Point(0, 421);
             this.BtnConfirmation.Margin = new System.Windows.Forms.Padding(0);
             this.BtnConfirmation.Name = "BtnConfirmation";
             this.BtnConfirmation.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BtnConfirmation.Size = new System.Drawing.Size(634, 75);
+            this.BtnConfirmation.Size = new System.Drawing.Size(725, 100);
             this.BtnConfirmation.TabIndex = 10;
             this.BtnConfirmation.Text = "Ürünü Onayla";
             this.BtnConfirmation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -78,7 +78,7 @@ namespace UserInterface
             this.TxHead.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.TxHead.Location = new System.Drawing.Point(0, 0);
             this.TxHead.Name = "TxHead";
-            this.TxHead.Size = new System.Drawing.Size(194, 32);
+            this.TxHead.Size = new System.Drawing.Size(247, 41);
             this.TxHead.TabIndex = 14;
             this.TxHead.Text = "ÜRÜN ONAYLARI";
             this.TxHead.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -117,40 +117,44 @@ namespace UserInterface
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DwProductConfirmation.DefaultCellStyle = dataGridViewCellStyle3;
             this.DwProductConfirmation.EnableHeadersVisualStyles = false;
-            this.DwProductConfirmation.Location = new System.Drawing.Point(0, 40);
+            this.DwProductConfirmation.Location = new System.Drawing.Point(0, 53);
+            this.DwProductConfirmation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.DwProductConfirmation.MultiSelect = false;
             this.DwProductConfirmation.Name = "DwProductConfirmation";
             this.DwProductConfirmation.ReadOnly = true;
             this.DwProductConfirmation.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.DwProductConfirmation.RowHeadersVisible = false;
+            this.DwProductConfirmation.RowHeadersWidth = 51;
             this.DwProductConfirmation.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.DwProductConfirmation.RowTemplate.Height = 25;
             this.DwProductConfirmation.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.DwProductConfirmation.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DwProductConfirmation.Size = new System.Drawing.Size(634, 270);
+            this.DwProductConfirmation.Size = new System.Drawing.Size(725, 360);
             this.DwProductConfirmation.TabIndex = 13;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(634, 34);
+            this.pictureBox1.Size = new System.Drawing.Size(725, 45);
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
             // ProductConfirmationUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(53)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(634, 391);
+            this.ClientSize = new System.Drawing.Size(725, 521);
             this.Controls.Add(this.TxHead);
             this.Controls.Add(this.DwProductConfirmation);
             this.Controls.Add(this.BtnConfirmation);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "ProductConfirmationUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ProductConfirmationUI";

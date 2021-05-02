@@ -29,7 +29,7 @@ namespace UserInterface
         public UserIndexUI(Account account)
         {
             // Giriş yapan kullanıcı Hesap bilgileri
-            InitializeComponent();
+            InitializeComponent(); 
             _account = account;
         }
 

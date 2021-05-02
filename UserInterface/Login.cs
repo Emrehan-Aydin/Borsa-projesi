@@ -21,11 +21,11 @@ namespace UserInterface
         }
         private void Login_Load(object sender, EventArgs e)
         {
-
+             
         }
         private void BtnRegister_Click(object sender, EventArgs e)
         {
-            RegisterUI registerUI = new RegisterUI();  // Kayıt olma forum nesnesi
+            RegisterUI registerUI = new RegisterUI();  // Kayıt olma forum nesnesi 
             registerUI.ShowDialog();
         }
 

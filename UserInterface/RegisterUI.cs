@@ -57,7 +57,7 @@ namespace UserInterface
 
         private void RegisterUI_Load(object sender, EventArgs e)
         {
-
+             
         }
     }
 }
