@@ -16,7 +16,7 @@ namespace ShopBusiness
 
         public void checkSaleAndPurchase()
         {
-            // Alım istekleri ve satım istekleri karşılaştırılma emri
+            // Alım istekleri ve satım istekleri karşılaştırılma emri 
             foreach (var purchases in purchaseOrderManager.GetAll().Data) //Alım emirleri
             {
                 var buyer = accountFinanceManager.GetByAccount(purchases.BuyerId).Data;
