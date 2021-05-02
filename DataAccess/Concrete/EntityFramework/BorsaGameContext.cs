@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace DataAccess.Concrete.EntityFramework
-{
+{ 
     public class BorsaGameContext:DbContext
     {
         // SQL Bağlantı tanımlanması.

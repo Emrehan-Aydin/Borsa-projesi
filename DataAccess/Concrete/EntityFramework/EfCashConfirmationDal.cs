@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 using Entities.DTo;
-
+ 
 namespace DataAccess.Concrete.EntityFramework
 {
     // CashConfirmation için EntityFrameWork veri tabanı ve nesne sınıfı

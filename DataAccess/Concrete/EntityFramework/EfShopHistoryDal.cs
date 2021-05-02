@@ -9,6 +9,6 @@ namespace DataAccess.Concrete.EntityFramework
 {
     // ShopHistory için EntityFrameWork veri tabanı ve nesne sınıfı
     public class EfShopHistoryDal :EfEntityRepositoryBase<ShopHistory, BorsaGameContext>, IShopHistoryDal
-    {
+    { 
     }
 }

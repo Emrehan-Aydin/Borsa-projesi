@@ -8,7 +8,7 @@ using System.Linq;
 using Entities.DTo;
 
 namespace DataAccess.Concrete.EntityFramework
-{
+{ 
     // SaleOrderDal için EntityFrameWork veri tabanı ve nesne sınıfı
     public class EfSaleOrderDal : EfEntityRepositoryBase<SaleOrder, BorsaGameContext>, ISaleOrderDal
     {

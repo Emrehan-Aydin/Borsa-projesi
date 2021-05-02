@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace DataAccess.Abstract
-{
+{ 
     // AccountAsset için generic referans IEntityRepository tanımlanması
     public interface IAccountAssetDal : IEntityRepository<AccountAsset>
     { 

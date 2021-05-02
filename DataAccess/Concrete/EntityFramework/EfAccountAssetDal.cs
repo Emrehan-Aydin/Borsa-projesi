@@ -8,7 +8,7 @@ using System.Text;
 using System.Linq;
 
 namespace DataAccess.Concrete.EntityFramework
-{
+{ 
     // AccountAsset için EntityFrameWork veri tabanı ve nesne sınıfı
     public class EfAccountAssetDal:EfEntityRepositoryBase<AccountAsset, BorsaGameContext>, IAccountAssetDal
     {

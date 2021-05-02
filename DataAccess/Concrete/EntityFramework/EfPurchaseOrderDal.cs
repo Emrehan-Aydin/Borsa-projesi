@@ -8,7 +8,7 @@ using System.Text;
 using System.Linq;
 
 namespace DataAccess.Concrete.EntityFramework
-{
+{ 
     // PurchaseOrder için EntityFrameWork veri tabanı ve nesne sınıfı
     public class EfPurchaseOrderDal : EfEntityRepositoryBase<PurchaseOrder, BorsaGameContext>, IPurchaseOrderDal
     {
