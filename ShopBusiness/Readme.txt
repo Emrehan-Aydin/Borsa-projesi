@@ -1,0 +1,1 @@
+﻿Alım Satım algoritması bu kütüphanede yer almaktadır.
