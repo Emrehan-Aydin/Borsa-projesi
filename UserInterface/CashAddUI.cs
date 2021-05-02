@@ -35,7 +35,7 @@ namespace UserInterface
 
         private void CashAddUI_Load(object sender, EventArgs e)
         {
-
+             
         }
     }
 }

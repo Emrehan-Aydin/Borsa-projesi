@@ -16,7 +16,7 @@ namespace UserInterface
         CashConfirmationManager cashConfirmationManager = new CashConfirmationManager(new EfCashConfirmationDal());
         public CashConfirmationUI()
         {
-            InitializeComponent();
+            InitializeComponent(); 
         }
 
         private void CashConfirmationUI_Load(object sender, EventArgs e)

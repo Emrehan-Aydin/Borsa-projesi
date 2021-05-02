@@ -27,7 +27,7 @@ namespace UserInterface
 
         private void AddNewProductUI_Load(object sender, EventArgs e)
         {
-            GetProductList();//Eklenecek Tüm ürünlerin listesi
+            GetProductList();//Eklenecek Tüm ürünlerin listesi 
         }
 
         private void GetProductList()
