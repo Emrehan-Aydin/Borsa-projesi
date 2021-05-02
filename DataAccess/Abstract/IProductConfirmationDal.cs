@@ -9,7 +9,7 @@ namespace DataAccess.Abstract
 {
     // ProductConfirmation için generic referans IEntityRepository tanımlanması
     public interface IProductConfirmationDal : IEntityRepository<ProductsConfirmation>
-    {
+    { 
         // Dto Oluşturma
         List<ProductConfirmationOrderDto> GetProductConfirmationOrderDetail();
     }

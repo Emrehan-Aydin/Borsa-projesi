@@ -8,6 +8,6 @@ namespace DataAccess.Abstract
 {
     // ShopHistory için generic referans IEntityRepository tanımlanması
     public interface IShopHistoryDal:IEntityRepository<ShopHistory>
-    {
+    {  
     }
 }

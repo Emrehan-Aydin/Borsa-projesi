@@ -8,7 +8,7 @@ namespace DataAccess.Abstract
 {
     // AccountInformation için generic referans IEntityRepository tanımlanması
     public interface IAccountInformationDal:IEntityRepository<AccountInformation>
-    {
+    { 
 
     }
 }

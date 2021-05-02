@@ -9,7 +9,7 @@ namespace DataAccess.Abstract
 {
     // CashConfirmation için generic referans IEntityRepository tanımlanması
     public interface ICashConfirmationDal : IEntityRepository<CashConfirmation>
-    {
+    { 
         // Dto Çağırma
         List<CashConfirmationOrderDto> GetCashConfirmationOrderDetail();
     }

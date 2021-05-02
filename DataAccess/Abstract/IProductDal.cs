@@ -8,6 +8,6 @@ namespace DataAccess.Abstract
 {
     // Product için generic referans IEntityRepository tanımlanması
     public interface IProductDal : IEntityRepository<Product>
-    {
+    { 
     }
 }

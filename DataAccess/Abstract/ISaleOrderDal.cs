@@ -9,7 +9,7 @@ namespace DataAccess.Abstract
 {
     // SaleOrder için generic referans IEntityRepository tanımlanması
     public interface ISaleOrderDal : IEntityRepository<SaleOrder>
-    {
+    { 
         // Dto Oluşturma
         List<SaleOrderDto> GetSaleOrderDetail();
         // Hesaba göre Dto Oluşturma
