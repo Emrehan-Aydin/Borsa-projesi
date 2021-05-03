@@ -32,7 +32,14 @@ namespace Business.Concrete
         // SQL Güncelleme fonksiyonu
         public IResult Update(PurchaseOrder purchaseOrder)
         {
-            _purchaseOrderDal.Update(purchaseOrder);
+            if (purchaseOrder.Count == 0)
+            {
+                _purchaseOrderDal.Delete(purchaseOrder);
+            }
+            else
+            {
+                _purchaseOrderDal.Update(purchaseOrder);
+            }
             return new SuccessResult("İşlem güncellendi!");
         }
         // SQL Tümünü Listele fonksiyonu

@@ -58,7 +58,14 @@ namespace Business.Concrete
         // SQL güncelleme fonksiyonu
         public IResult Update(SaleOrder saleOrder)
         {
-            _saleOrderDal.Update(saleOrder);
+            if (saleOrder.StockOfProduct == 0)
+            {
+                _saleOrderDal.Delete(saleOrder);
+            }
+            else
+            {
+                _saleOrderDal.Update(saleOrder);
+            }
             return new SuccessResult("İşleme güncellendi!");
         }
         // SQL ürün Numarasına göre getir fonksiyonu

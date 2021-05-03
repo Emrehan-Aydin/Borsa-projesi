@@ -22,7 +22,6 @@ namespace UserInterface
         {
             InitializeComponent();
             _account = account;
-            saleOrderDto = saleOrderManager.GetByAccountDetails(account).Data;
         }
         public SaleOrderUI()
         {
@@ -30,10 +29,28 @@ namespace UserInterface
         }
         private void SaleOrderUI_Load(object sender, EventArgs e)
         {
-            GetDataGridView(); 
+            if (_account == null)
+            {
+                GetAdminDataGridView();
+            }
+            else
+            {
+                GetDataGridView();
+            }
         }
 
         private void GetDataGridView()
+        {
+            DgSaleOrderDetails.DataSource = saleOrderManager.GetByAccountDetails(_account).Data;
+            DgSaleOrderDetails.Columns[0].HeaderText = "İşlem Id";
+            DgSaleOrderDetails.Columns[1].HeaderText = "Ürün Adı";
+            DgSaleOrderDetails.Columns[2].HeaderText = "Birim fiyat";
+            DgSaleOrderDetails.Columns[3].HeaderText = "Adet";
+            DgSaleOrderDetails.Columns[4].HeaderText = "UId";
+            DgSaleOrderDetails.Columns[5].HeaderText = "Ad";
+            DgSaleOrderDetails.Columns[6].HeaderText = "Soyad";
+        }
+        private void GetAdminDataGridView()
         {
             DgSaleOrderDetails.DataSource = saleOrderManager.GetDetails().Data; ;
             DgSaleOrderDetails.Columns[0].HeaderText = "İşlem Id";
@@ -63,7 +80,14 @@ namespace UserInterface
             var mfrm = (UserIndexUI)Application.OpenForms["UserIndexUI"];
             if (mfrm != null)
                 mfrm.GetUserInterfaceInfo();
-            GetDataGridView();
+            if (_account == null)
+            {
+                GetAdminDataGridView();
+            }
+            else
+            {
+                GetDataGridView();
+            }
         }
 
         private void SaleOrderUI_FormClosed(object sender, FormClosedEventArgs e)

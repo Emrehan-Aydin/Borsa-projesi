@@ -24,7 +24,6 @@ namespace UserInterface
             // İlgili account nesnesi
             _account = account;
             // Alım emirleri hesaba göre Dto verilerinin çekilmesi.
-            _purchaseOrderDto = purchaseOrderManager.GetByAccountDetail(account).Data;
             InitializeComponent();
         }
 
@@ -36,10 +35,29 @@ namespace UserInterface
 
         private void PurchaseOrderUI_Load(object sender, EventArgs e)
         {
-            GetDwDatas(); // DatagridView Verileri getir fonksiyonu
+            if (_account == null)
+            {
+                GetAdminDwDatas(); // DatagridviEw admin için tüm verileri çeker
+            }
+            else
+            {
+                GetDwDatas(); // DatagridView Verileri getir fonksiyonu
+            }
         }
 
         private void GetDwDatas()
+        {
+            // Dto  Aktar
+            DwPurchaseOrder.DataSource = purchaseOrderManager.GetByAccountDetail(_account).Data;
+            // Dgw başlıklar set edilmesi
+            DwPurchaseOrder.Columns[0].HeaderText = "İşlem Id";
+            DwPurchaseOrder.Columns[1].HeaderText = "Ürün Adı";
+            DwPurchaseOrder.Columns[2].HeaderText = "Adet";
+            DwPurchaseOrder.Columns[3].HeaderText = "UId";
+            DwPurchaseOrder.Columns[4].HeaderText = "Ad";
+            DwPurchaseOrder.Columns[5].HeaderText = "Soyad";
+        }
+        private void GetAdminDwDatas()
         {
             // Dto  Aktar
             DwPurchaseOrder.DataSource = purchaseOrderManager.GetPurchaseOrderDetail().Data;
@@ -67,7 +85,15 @@ namespace UserInterface
             purchaseOrderManager.Delete(result);
             // Seçili ürün geri iade sistem mesajı
             MessageBox.Show(DwPurchaseOrder.SelectedCells[3].Value + " Adet " + DwPurchaseOrder.SelectedCells[1].Value + " Ürün geri iade edilmiştir.", "İşlem Tamamlandı", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            GetDwDatas(); 
+            if (_account == null)
+            {
+                GetAdminDwDatas(); // DatagridviEw admin için tüm verileri çeker
+                
+            }
+            else
+            {
+                GetDwDatas(); // DatagridView Verileri getir fonksiyonu
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
