@@ -6,7 +6,7 @@ using System.Text;
 
 namespace DataAccess.Abstract
 {
-    // Account için generic referans IEntityRepository tanımlanması.
+    // Account için generic referans IEntityRepository tanımlanması
     public interface IAccountDal:IEntityRepository<Account>
     { 
     }
