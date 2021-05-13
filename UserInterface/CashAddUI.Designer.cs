@@ -40,11 +40,11 @@ namespace UserInterface
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(35, 50);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 19);
+            this.label1.Size = new System.Drawing.Size(119, 16);
             this.label1.TabIndex = 11;
             this.label1.Text = "Yüklenecek Tutar";
             // 
@@ -52,7 +52,7 @@ namespace UserInterface
             // 
             this.TxCountOfProduct.BackColor = System.Drawing.Color.White;
             this.TxCountOfProduct.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxCountOfProduct.Location = new System.Drawing.Point(174, 53);
+            this.TxCountOfProduct.Location = new System.Drawing.Point(174, 50);
             this.TxCountOfProduct.Name = "TxCountOfProduct";
             this.TxCountOfProduct.Size = new System.Drawing.Size(100, 16);
             this.TxCountOfProduct.TabIndex = 14;
@@ -61,11 +61,11 @@ namespace UserInterface
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(78, 16);
+            this.label2.Location = new System.Drawing.Point(69, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 19);
+            this.label2.Size = new System.Drawing.Size(168, 16);
             this.label2.TabIndex = 15;
             this.label2.Text = "Yüklenecek tutarı giriniz.";
             // 
@@ -82,7 +82,7 @@ namespace UserInterface
             this.BtnBuy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnBuy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue;
             this.BtnBuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBuy.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnBuy.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnBuy.ForeColor = System.Drawing.Color.White;
             this.BtnBuy.Image = ((System.Drawing.Image)(resources.GetObject("BtnBuy.Image")));
             this.BtnBuy.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -110,6 +110,7 @@ namespace UserInterface
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CashAddUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bakiye Ekle";
             this.Load += new System.EventHandler(this.CashAddUI_Load);
             this.ResumeLayout(false);

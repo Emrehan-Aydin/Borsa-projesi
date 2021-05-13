@@ -32,7 +32,7 @@ namespace UserInterface
             DwCashConfirmation.Columns[1].HeaderText = "Kimlik Nu";
             DwCashConfirmation.Columns[2].HeaderText = "Ad";
             DwCashConfirmation.Columns[3].HeaderText = "Soyad";
-            DwCashConfirmation.Columns[4].HeaderText = "Bekleyen Bakiye";
+            DwCashConfirmation.Columns[4].HeaderText = "Bekleyen(TL)";
         }
 
         private void BtnConfirmation_Click(object sender, EventArgs e)

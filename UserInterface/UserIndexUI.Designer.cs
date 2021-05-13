@@ -30,8 +30,8 @@ namespace UserInterface
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserIndexUI));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TxUserName = new System.Windows.Forms.Label();
             this.TxBakiyetext = new System.Windows.Forms.Label();
             this.TxBakiye = new System.Windows.Forms.Label();
@@ -66,12 +66,12 @@ namespace UserInterface
             // 
             this.TxUserName.AutoSize = true;
             this.TxUserName.BackColor = System.Drawing.Color.Transparent;
-            this.TxUserName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxUserName.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxUserName.ForeColor = System.Drawing.Color.White;
             this.TxUserName.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.TxUserName.Location = new System.Drawing.Point(43, 10);
             this.TxUserName.Name = "TxUserName";
-            this.TxUserName.Size = new System.Drawing.Size(73, 19);
+            this.TxUserName.Size = new System.Drawing.Size(73, 16);
             this.TxUserName.TabIndex = 0;
             this.TxUserName.Text = "UserName";
             this.TxUserName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -80,11 +80,11 @@ namespace UserInterface
             // 
             this.TxBakiyetext.AutoSize = true;
             this.TxBakiyetext.BackColor = System.Drawing.Color.Transparent;
-            this.TxBakiyetext.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxBakiyetext.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxBakiyetext.ForeColor = System.Drawing.Color.White;
-            this.TxBakiyetext.Location = new System.Drawing.Point(648, 13);
+            this.TxBakiyetext.Location = new System.Drawing.Point(648, 10);
             this.TxBakiyetext.Name = "TxBakiyetext";
-            this.TxBakiyetext.Size = new System.Drawing.Size(60, 19);
+            this.TxBakiyetext.Size = new System.Drawing.Size(64, 16);
             this.TxBakiyetext.TabIndex = 1;
             this.TxBakiyetext.Text = "Bakiyem";
             // 
@@ -92,11 +92,11 @@ namespace UserInterface
             // 
             this.TxBakiye.AutoSize = true;
             this.TxBakiye.BackColor = System.Drawing.Color.Transparent;
-            this.TxBakiye.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxBakiye.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxBakiye.ForeColor = System.Drawing.Color.White;
-            this.TxBakiye.Location = new System.Drawing.Point(714, 13);
+            this.TxBakiye.Location = new System.Drawing.Point(714, 10);
             this.TxBakiye.Name = "TxBakiye";
-            this.TxBakiye.Size = new System.Drawing.Size(60, 19);
+            this.TxBakiye.Size = new System.Drawing.Size(64, 16);
             this.TxBakiye.TabIndex = 2;
             this.TxBakiye.Text = "Bakiyem";
             // 
@@ -116,11 +116,11 @@ namespace UserInterface
             this.BtnBakiyeEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBakiyeEkle.Font = new System.Drawing.Font("Segoe UI Light", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.BtnBakiyeEkle.ForeColor = System.Drawing.Color.Transparent;
-            this.BtnBakiyeEkle.Location = new System.Drawing.Point(625, 12);
+            this.BtnBakiyeEkle.Location = new System.Drawing.Point(625, 5);
             this.BtnBakiyeEkle.Margin = new System.Windows.Forms.Padding(0);
             this.BtnBakiyeEkle.Name = "BtnBakiyeEkle";
             this.BtnBakiyeEkle.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BtnBakiyeEkle.Size = new System.Drawing.Size(20, 21);
+            this.BtnBakiyeEkle.Size = new System.Drawing.Size(20, 26);
             this.BtnBakiyeEkle.TabIndex = 5;
             this.BtnBakiyeEkle.UseVisualStyleBackColor = false;
             this.BtnBakiyeEkle.Click += new System.EventHandler(this.BtnBakiyeEkle_Click);
@@ -138,7 +138,7 @@ namespace UserInterface
             this.BtnNewProduct.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnNewProduct.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue;
             this.BtnNewProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNewProduct.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.BtnNewProduct.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnNewProduct.ForeColor = System.Drawing.Color.Transparent;
             this.BtnNewProduct.Image = ((System.Drawing.Image)(resources.GetObject("BtnNewProduct.Image")));
             this.BtnNewProduct.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -158,9 +158,9 @@ namespace UserInterface
             this.GbAsset.BackColor = System.Drawing.Color.Transparent;
             this.GbAsset.Controls.Add(this.Assets);
             this.GbAsset.Controls.Add(this.BtnNewProduct);
-            this.GbAsset.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.GbAsset.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.GbAsset.ForeColor = System.Drawing.Color.White;
-            this.GbAsset.Location = new System.Drawing.Point(433, 33);
+            this.GbAsset.Location = new System.Drawing.Point(433, 37);
             this.GbAsset.Name = "GbAsset";
             this.GbAsset.Size = new System.Drawing.Size(355, 309);
             this.GbAsset.TabIndex = 8;
@@ -179,24 +179,24 @@ namespace UserInterface
             this.Assets.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Assets.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.Assets.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.MidnightBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Assets.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.MidnightBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Assets.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.Assets.ColumnHeadersHeight = 25;
             this.Assets.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Assets.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Assets.DefaultCellStyle = dataGridViewCellStyle4;
             this.Assets.EnableHeadersVisualStyles = false;
             this.Assets.Location = new System.Drawing.Point(3, 47);
             this.Assets.MultiSelect = false;
@@ -206,7 +206,7 @@ namespace UserInterface
             this.Assets.RowHeadersVisible = false;
             this.Assets.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.Assets.RowTemplate.Height = 25;
-            this.Assets.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.Assets.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.Assets.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Assets.Size = new System.Drawing.Size(349, 259);
             this.Assets.TabIndex = 8;
@@ -222,11 +222,11 @@ namespace UserInterface
             this.GbSell.Controls.Add(this.label1);
             this.GbSell.Controls.Add(this.CbMyProductList);
             this.GbSell.Controls.Add(this.BtnSell);
-            this.GbSell.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.GbSell.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.GbSell.ForeColor = System.Drawing.Color.White;
-            this.GbSell.Location = new System.Drawing.Point(12, 33);
+            this.GbSell.Location = new System.Drawing.Point(12, 37);
             this.GbSell.Name = "GbSell";
-            this.GbSell.Size = new System.Drawing.Size(415, 150);
+            this.GbSell.Size = new System.Drawing.Size(415, 153);
             this.GbSell.TabIndex = 9;
             this.GbSell.TabStop = false;
             this.GbSell.Text = "Ürün Satım Emri";
@@ -243,7 +243,7 @@ namespace UserInterface
             this.BtnSaleHistory.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.BtnSaleHistory.FlatAppearance.BorderSize = 0;
             this.BtnSaleHistory.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.BtnSaleHistory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.BtnSaleHistory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue;
             this.BtnSaleHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSaleHistory.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnSaleHistory.ForeColor = System.Drawing.Color.White;
@@ -259,30 +259,32 @@ namespace UserInterface
             // TbMyPriceOfProduct
             // 
             this.TbMyPriceOfProduct.BackColor = System.Drawing.Color.White;
-            this.TbMyPriceOfProduct.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TbMyPriceOfProduct.Location = new System.Drawing.Point(159, 110);
+            this.TbMyPriceOfProduct.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TbMyPriceOfProduct.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TbMyPriceOfProduct.Location = new System.Drawing.Point(159, 109);
             this.TbMyPriceOfProduct.Name = "TbMyPriceOfProduct";
-            this.TbMyPriceOfProduct.Size = new System.Drawing.Size(100, 22);
+            this.TbMyPriceOfProduct.Size = new System.Drawing.Size(100, 23);
             this.TbMyPriceOfProduct.TabIndex = 14;
             // 
             // TbMyProductCount
             // 
             this.TbMyProductCount.BackColor = System.Drawing.Color.White;
-            this.TbMyProductCount.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TbMyProductCount.Location = new System.Drawing.Point(159, 72);
+            this.TbMyProductCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TbMyProductCount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TbMyProductCount.Location = new System.Drawing.Point(159, 71);
             this.TbMyProductCount.Name = "TbMyProductCount";
-            this.TbMyProductCount.Size = new System.Drawing.Size(100, 22);
+            this.TbMyProductCount.Size = new System.Drawing.Size(100, 23);
             this.TbMyProductCount.TabIndex = 13;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(27, 113);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 19);
+            this.label3.Size = new System.Drawing.Size(112, 16);
             this.label3.TabIndex = 12;
             this.label3.Text = "Birim fiyat TL/Kg";
             // 
@@ -290,11 +292,11 @@ namespace UserInterface
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(27, 75);
+            this.label2.Location = new System.Drawing.Point(27, 74);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 19);
+            this.label2.Size = new System.Drawing.Size(80, 16);
             this.label2.TabIndex = 11;
             this.label2.Text = "Miktar (Kg)";
             // 
@@ -302,11 +304,11 @@ namespace UserInterface
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(27, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 19);
+            this.label1.Size = new System.Drawing.Size(75, 16);
             this.label1.TabIndex = 10;
             this.label1.Text = "Ürün Seçin";
             // 
@@ -335,15 +337,15 @@ namespace UserInterface
             this.BtnSell.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnSell.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue;
             this.BtnSell.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSell.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnSell.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnSell.ForeColor = System.Drawing.Color.White;
             this.BtnSell.Image = ((System.Drawing.Image)(resources.GetObject("BtnSell.Image")));
             this.BtnSell.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.BtnSell.Location = new System.Drawing.Point(270, 106);
+            this.BtnSell.Location = new System.Drawing.Point(279, 110);
             this.BtnSell.Margin = new System.Windows.Forms.Padding(0);
             this.BtnSell.Name = "BtnSell";
             this.BtnSell.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BtnSell.Size = new System.Drawing.Size(140, 32);
+            this.BtnSell.Size = new System.Drawing.Size(123, 32);
             this.BtnSell.TabIndex = 8;
             this.BtnSell.Text = "Satım Emri";
             this.BtnSell.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -359,9 +361,9 @@ namespace UserInterface
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.CbProductList);
             this.groupBox1.Controls.Add(this.BtnBuy);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(12, 192);
+            this.groupBox1.Location = new System.Drawing.Point(12, 196);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(415, 150);
             this.groupBox1.TabIndex = 10;
@@ -380,7 +382,7 @@ namespace UserInterface
             this.BtnPurchaseHistory.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.BtnPurchaseHistory.FlatAppearance.BorderSize = 0;
             this.BtnPurchaseHistory.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.BtnPurchaseHistory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.BtnPurchaseHistory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue;
             this.BtnPurchaseHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPurchaseHistory.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnPurchaseHistory.ForeColor = System.Drawing.Color.White;
@@ -396,21 +398,22 @@ namespace UserInterface
             // TbProductCount
             // 
             this.TbProductCount.BackColor = System.Drawing.Color.White;
-            this.TbProductCount.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TbProductCount.Location = new System.Drawing.Point(159, 74);
+            this.TbProductCount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TbProductCount.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TbProductCount.Location = new System.Drawing.Point(159, 71);
             this.TbProductCount.Name = "TbProductCount";
-            this.TbProductCount.Size = new System.Drawing.Size(100, 22);
+            this.TbProductCount.Size = new System.Drawing.Size(100, 23);
             this.TbProductCount.TabIndex = 15;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(27, 77);
+            this.label5.Location = new System.Drawing.Point(27, 74);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 19);
+            this.label5.Size = new System.Drawing.Size(80, 16);
             this.label5.TabIndex = 14;
             this.label5.Text = "Miktar (Kg)";
             // 
@@ -418,11 +421,11 @@ namespace UserInterface
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(27, 40);
+            this.label4.Location = new System.Drawing.Point(27, 41);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 19);
+            this.label4.Size = new System.Drawing.Size(75, 16);
             this.label4.TabIndex = 12;
             this.label4.Text = "Ürün Seçin";
             // 
@@ -451,14 +454,14 @@ namespace UserInterface
             this.BtnBuy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnBuy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue;
             this.BtnBuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBuy.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnBuy.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnBuy.ForeColor = System.Drawing.Color.White;
             this.BtnBuy.Image = ((System.Drawing.Image)(resources.GetObject("BtnBuy.Image")));
-            this.BtnBuy.Location = new System.Drawing.Point(270, 104);
+            this.BtnBuy.Location = new System.Drawing.Point(279, 106);
             this.BtnBuy.Margin = new System.Windows.Forms.Padding(0);
             this.BtnBuy.Name = "BtnBuy";
             this.BtnBuy.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BtnBuy.Size = new System.Drawing.Size(139, 32);
+            this.BtnBuy.Size = new System.Drawing.Size(123, 32);
             this.BtnBuy.TabIndex = 9;
             this.BtnBuy.Text = "Alım Emri";
             this.BtnBuy.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -481,11 +484,11 @@ namespace UserInterface
             this.Btn_Profile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_Profile.Font = new System.Drawing.Font("Segoe UI Light", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
             this.Btn_Profile.ForeColor = System.Drawing.Color.Transparent;
-            this.Btn_Profile.Location = new System.Drawing.Point(17, 8);
+            this.Btn_Profile.Location = new System.Drawing.Point(17, 6);
             this.Btn_Profile.Margin = new System.Windows.Forms.Padding(0);
             this.Btn_Profile.Name = "Btn_Profile";
             this.Btn_Profile.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Btn_Profile.Size = new System.Drawing.Size(29, 20);
+            this.Btn_Profile.Size = new System.Drawing.Size(29, 25);
             this.Btn_Profile.TabIndex = 11;
             this.Btn_Profile.UseVisualStyleBackColor = false;
             // 
@@ -494,7 +497,7 @@ namespace UserInterface
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(53)))));
-            this.ClientSize = new System.Drawing.Size(800, 352);
+            this.ClientSize = new System.Drawing.Size(800, 357);
             this.Controls.Add(this.Btn_Profile);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GbSell);
@@ -505,7 +508,8 @@ namespace UserInterface
             this.Controls.Add(this.TxUserName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "UserIndexUI";
-            this.Text = "UserIndex";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Anasayfa";
             this.Load += new System.EventHandler(this.UserIndexUI_Load);
             this.GbAsset.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Assets)).EndInit();

@@ -52,15 +52,15 @@ namespace UserInterface
             this.BtnConfirmation.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnConfirmation.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue;
             this.BtnConfirmation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnConfirmation.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnConfirmation.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnConfirmation.ForeColor = System.Drawing.Color.White;
             this.BtnConfirmation.Image = ((System.Drawing.Image)(resources.GetObject("BtnConfirmation.Image")));
             this.BtnConfirmation.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnConfirmation.Location = new System.Drawing.Point(0, 421);
+            this.BtnConfirmation.Location = new System.Drawing.Point(0, 316);
             this.BtnConfirmation.Margin = new System.Windows.Forms.Padding(0);
             this.BtnConfirmation.Name = "BtnConfirmation";
             this.BtnConfirmation.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BtnConfirmation.Size = new System.Drawing.Size(725, 100);
+            this.BtnConfirmation.Size = new System.Drawing.Size(684, 75);
             this.BtnConfirmation.TabIndex = 11;
             this.BtnConfirmation.Text = "İşlemi Onayla";
             this.BtnConfirmation.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -71,17 +71,20 @@ namespace UserInterface
             // 
             this.TxHead.AutoSize = true;
             this.TxHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
-            this.TxHead.Dock = System.Windows.Forms.DockStyle.Top;
             this.TxHead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TxHead.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxHead.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxHead.ForeColor = System.Drawing.Color.White;
-            this.TxHead.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.TxHead.Location = new System.Drawing.Point(0, 0);
+            this.TxHead.Image = ((System.Drawing.Image)(resources.GetObject("TxHead.Image")));
+            this.TxHead.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxHead.Location = new System.Drawing.Point(10, 14);
+            this.TxHead.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.TxHead.Name = "TxHead";
-            this.TxHead.Size = new System.Drawing.Size(299, 41);
-            this.TxHead.TabIndex = 16;
-            this.TxHead.Text = "BAKİYE ONAY LİSTESİ";
-            this.TxHead.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.TxHead.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TxHead.Size = new System.Drawing.Size(170, 25);
+            this.TxHead.TabIndex = 23;
+            this.TxHead.Text = "      FİNANS İŞLEMLERİ";
+            this.TxHead.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.TxHead.UseCompatibleTextRendering = true;
             // 
             // DwCashConfirmation
             // 
@@ -100,25 +103,25 @@ namespace UserInterface
             this.DwCashConfirmation.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(5)))), ((int)(((byte)(43)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(5)))), ((int)(((byte)(43)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DwCashConfirmation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DwCashConfirmation.ColumnHeadersHeight = 25;
+            this.DwCashConfirmation.ColumnHeadersHeight = 45;
             this.DwCashConfirmation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(10);
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.MidnightBlue;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DwCashConfirmation.DefaultCellStyle = dataGridViewCellStyle3;
             this.DwCashConfirmation.EnableHeadersVisualStyles = false;
-            this.DwCashConfirmation.Location = new System.Drawing.Point(0, 53);
-            this.DwCashConfirmation.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.DwCashConfirmation.Location = new System.Drawing.Point(0, 55);
             this.DwCashConfirmation.MultiSelect = false;
             this.DwCashConfirmation.Name = "DwCashConfirmation";
             this.DwCashConfirmation.ReadOnly = true;
@@ -126,37 +129,37 @@ namespace UserInterface
             this.DwCashConfirmation.RowHeadersVisible = false;
             this.DwCashConfirmation.RowHeadersWidth = 51;
             this.DwCashConfirmation.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.DwCashConfirmation.RowTemplate.Height = 25;
-            this.DwCashConfirmation.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.DwCashConfirmation.RowTemplate.Height = 45;
+            this.DwCashConfirmation.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DwCashConfirmation.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DwCashConfirmation.Size = new System.Drawing.Size(725, 360);
-            this.DwCashConfirmation.TabIndex = 15;
+            this.DwCashConfirmation.Size = new System.Drawing.Size(684, 255);
+            this.DwCashConfirmation.TabIndex = 22;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(725, 45);
-            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.Size = new System.Drawing.Size(684, 55);
+            this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "";
             // 
             // CashConfirmationUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(53)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(725, 521);
+            this.ClientSize = new System.Drawing.Size(684, 391);
             this.Controls.Add(this.TxHead);
             this.Controls.Add(this.DwCashConfirmation);
-            this.Controls.Add(this.BtnConfirmation);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.BtnConfirmation);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CashConfirmationUI";
-            this.Text = "CashConfirmationUI";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Bakiye Onay";
             this.Load += new System.EventHandler(this.CashConfirmationUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DwCashConfirmation)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

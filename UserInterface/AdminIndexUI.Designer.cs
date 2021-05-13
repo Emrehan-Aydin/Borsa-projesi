@@ -52,7 +52,7 @@ namespace UserInterface
             this.BtnPurchasePage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnPurchasePage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue;
             this.BtnPurchasePage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnPurchasePage.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnPurchasePage.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnPurchasePage.ForeColor = System.Drawing.Color.White;
             this.BtnPurchasePage.Image = ((System.Drawing.Image)(resources.GetObject("BtnPurchasePage.Image")));
             this.BtnPurchasePage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -81,7 +81,7 @@ namespace UserInterface
             this.BtnSellPage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnSellPage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue;
             this.BtnSellPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnSellPage.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnSellPage.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnSellPage.ForeColor = System.Drawing.Color.White;
             this.BtnSellPage.Image = ((System.Drawing.Image)(resources.GetObject("BtnSellPage.Image")));
             this.BtnSellPage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -111,7 +111,7 @@ namespace UserInterface
             this.BtnFinancePage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnFinancePage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue;
             this.BtnFinancePage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnFinancePage.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnFinancePage.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnFinancePage.ForeColor = System.Drawing.Color.White;
             this.BtnFinancePage.Image = ((System.Drawing.Image)(resources.GetObject("BtnFinancePage.Image")));
             this.BtnFinancePage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -141,7 +141,7 @@ namespace UserInterface
             this.BtnProductPage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnProductPage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue;
             this.BtnProductPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnProductPage.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnProductPage.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnProductPage.ForeColor = System.Drawing.Color.White;
             this.BtnProductPage.Image = ((System.Drawing.Image)(resources.GetObject("BtnProductPage.Image")));
             this.BtnProductPage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -173,10 +173,12 @@ namespace UserInterface
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(53)))));
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(224, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(616, 392);
+            this.panel2.Size = new System.Drawing.Size(676, 392);
             this.panel2.TabIndex = 15;
             // 
             // AdminIndexUI
@@ -185,14 +187,15 @@ namespace UserInterface
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(840, 392);
+            this.ClientSize = new System.Drawing.Size(900, 392);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.Name = "AdminIndexUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AdminIndex";
+            this.Text = "Anasayfa";
             this.Load += new System.EventHandler(this.AdminIndexUI_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

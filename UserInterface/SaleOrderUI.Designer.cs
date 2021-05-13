@@ -52,7 +52,7 @@ namespace UserInterface
             this.BtnBackUp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnBackUp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue;
             this.BtnBackUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBackUp.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnBackUp.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnBackUp.ForeColor = System.Drawing.Color.White;
             this.BtnBackUp.Image = ((System.Drawing.Image)(resources.GetObject("BtnBackUp.Image")));
             this.BtnBackUp.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -60,7 +60,7 @@ namespace UserInterface
             this.BtnBackUp.Margin = new System.Windows.Forms.Padding(0);
             this.BtnBackUp.Name = "BtnBackUp";
             this.BtnBackUp.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BtnBackUp.Size = new System.Drawing.Size(634, 75);
+            this.BtnBackUp.Size = new System.Drawing.Size(684, 75);
             this.BtnBackUp.TabIndex = 10;
             this.BtnBackUp.Text = "Geri Al";
             this.BtnBackUp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -71,17 +71,20 @@ namespace UserInterface
             // 
             this.TxHead.AutoSize = true;
             this.TxHead.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
-            this.TxHead.Dock = System.Windows.Forms.DockStyle.Top;
             this.TxHead.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TxHead.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxHead.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TxHead.ForeColor = System.Drawing.Color.White;
-            this.TxHead.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.TxHead.Location = new System.Drawing.Point(0, 0);
+            this.TxHead.Image = ((System.Drawing.Image)(resources.GetObject("TxHead.Image")));
+            this.TxHead.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.TxHead.Location = new System.Drawing.Point(10, 14);
+            this.TxHead.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.TxHead.Name = "TxHead";
-            this.TxHead.Size = new System.Drawing.Size(185, 32);
+            this.TxHead.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.TxHead.Size = new System.Drawing.Size(153, 25);
             this.TxHead.TabIndex = 14;
-            this.TxHead.Text = "SATIM EMİRLERİ";
-            this.TxHead.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.TxHead.Text = "      SATIM EMİRLERİ";
+            this.TxHead.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.TxHead.UseCompatibleTextRendering = true;
             // 
             // DgSaleOrderDetails
             // 
@@ -100,24 +103,25 @@ namespace UserInterface
             this.DgSaleOrderDetails.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(5)))), ((int)(((byte)(43)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(5)))), ((int)(((byte)(43)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DgSaleOrderDetails.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DgSaleOrderDetails.ColumnHeadersHeight = 25;
+            this.DgSaleOrderDetails.ColumnHeadersHeight = 45;
             this.DgSaleOrderDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(10);
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.MidnightBlue;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DgSaleOrderDetails.DefaultCellStyle = dataGridViewCellStyle3;
             this.DgSaleOrderDetails.EnableHeadersVisualStyles = false;
-            this.DgSaleOrderDetails.Location = new System.Drawing.Point(0, 40);
+            this.DgSaleOrderDetails.Location = new System.Drawing.Point(0, 55);
             this.DgSaleOrderDetails.MultiSelect = false;
             this.DgSaleOrderDetails.Name = "DgSaleOrderDetails";
             this.DgSaleOrderDetails.ReadOnly = true;
@@ -125,10 +129,10 @@ namespace UserInterface
             this.DgSaleOrderDetails.RowHeadersVisible = false;
             this.DgSaleOrderDetails.RowHeadersWidth = 51;
             this.DgSaleOrderDetails.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.DgSaleOrderDetails.RowTemplate.Height = 25;
-            this.DgSaleOrderDetails.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.DgSaleOrderDetails.RowTemplate.Height = 45;
+            this.DgSaleOrderDetails.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.DgSaleOrderDetails.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgSaleOrderDetails.Size = new System.Drawing.Size(634, 270);
+            this.DgSaleOrderDetails.Size = new System.Drawing.Size(684, 255);
             this.DgSaleOrderDetails.TabIndex = 13;
             // 
             // pictureBox1
@@ -136,9 +140,10 @@ namespace UserInterface
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(634, 34);
+            this.pictureBox1.Size = new System.Drawing.Size(684, 55);
             this.pictureBox1.TabIndex = 15;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Tag = "";
             // 
             // SaleOrderUI
             // 
@@ -146,7 +151,7 @@ namespace UserInterface
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(53)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(634, 391);
+            this.ClientSize = new System.Drawing.Size(684, 391);
             this.Controls.Add(this.TxHead);
             this.Controls.Add(this.DgSaleOrderDetails);
             this.Controls.Add(this.BtnBackUp);
@@ -154,7 +159,7 @@ namespace UserInterface
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "SaleOrderUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "SaleOrderPage";
+            this.Text = "Satış Emirleri";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SaleOrderUI_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SaleOrderUI_FormClosed);
             this.Load += new System.EventHandler(this.SaleOrderUI_Load);

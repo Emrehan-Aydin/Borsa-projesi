@@ -75,20 +75,22 @@ namespace UserInterface
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(35, 69);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 15);
+            this.label2.Size = new System.Drawing.Size(49, 16);
             this.label2.TabIndex = 4;
             this.label2.Text = "Parola";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(35, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 15);
+            this.label1.Size = new System.Drawing.Size(88, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "Kullanıcı Adı";
             // 
@@ -117,7 +119,7 @@ namespace UserInterface
             this.groupBox2.Controls.Add(this.TbSurname);
             this.groupBox2.Controls.Add(this.TbName);
             this.groupBox2.Controls.Add(this.tbTc);
-            this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox2.ForeColor = System.Drawing.Color.White;
             this.groupBox2.Location = new System.Drawing.Point(12, 12);
             this.groupBox2.Name = "groupBox2";
@@ -129,43 +131,47 @@ namespace UserInterface
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(35, 130);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 15);
+            this.label4.Size = new System.Drawing.Size(48, 16);
             this.label4.TabIndex = 5;
             this.label4.Text = "Soyad";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(35, 81);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(22, 15);
+            this.label5.Size = new System.Drawing.Size(26, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "Ad";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(35, 32);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 15);
+            this.label6.Size = new System.Drawing.Size(113, 16);
             this.label6.TabIndex = 3;
             this.label6.Text = "Kimlik Numarası";
             // 
             // TbSurname
             // 
-            this.TbSurname.Location = new System.Drawing.Point(144, 126);
+            this.TbSurname.Location = new System.Drawing.Point(161, 127);
             this.TbSurname.Name = "TbSurname";
             this.TbSurname.Size = new System.Drawing.Size(100, 23);
             this.TbSurname.TabIndex = 2;
             // 
             // TbName
             // 
-            this.TbName.Location = new System.Drawing.Point(144, 78);
+            this.TbName.Location = new System.Drawing.Point(161, 78);
+            this.TbName.MaxLength = 25;
             this.TbName.Name = "TbName";
             this.TbName.Size = new System.Drawing.Size(100, 23);
             this.TbName.TabIndex = 1;
@@ -173,7 +179,8 @@ namespace UserInterface
             // tbTc
             // 
             this.tbTc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbTc.Location = new System.Drawing.Point(144, 30);
+            this.tbTc.Location = new System.Drawing.Point(161, 29);
+            this.tbTc.MaxLength = 11;
             this.tbTc.Name = "tbTc";
             this.tbTc.Size = new System.Drawing.Size(100, 23);
             this.tbTc.TabIndex = 0;
@@ -203,31 +210,34 @@ namespace UserInterface
             this.groupBox3.Controls.Add(this.TbAdress);
             this.groupBox3.Controls.Add(this.TbTelNo);
             this.groupBox3.Controls.Add(this.TbEmail);
+            this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox3.ForeColor = System.Drawing.Color.White;
             this.groupBox3.Location = new System.Drawing.Point(12, 201);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(566, 193);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Kimlik Bilgileri";
+            this.groupBox3.Text = "İletişim Bilgileri";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(37, 113);
+            this.label7.Location = new System.Drawing.Point(35, 133);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 15);
+            this.label7.Size = new System.Drawing.Size(45, 16);
             this.label7.TabIndex = 5;
             this.label7.Text = "Adres";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(37, 73);
+            this.label8.Location = new System.Drawing.Point(35, 73);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(99, 15);
+            this.label8.Size = new System.Drawing.Size(119, 16);
             this.label8.TabIndex = 4;
             this.label8.Text = "Telefon Numarası";
             // 
@@ -235,15 +245,15 @@ namespace UserInterface
             // 
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(37, 30);
+            this.label10.Location = new System.Drawing.Point(35, 30);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 15);
+            this.label10.Size = new System.Drawing.Size(48, 16);
             this.label10.TabIndex = 3;
             this.label10.Text = "E-Mail";
             // 
             // TbAdress
             // 
-            this.TbAdress.Location = new System.Drawing.Point(154, 110);
+            this.TbAdress.Location = new System.Drawing.Point(161, 108);
             this.TbAdress.Multiline = true;
             this.TbAdress.Name = "TbAdress";
             this.TbAdress.Size = new System.Drawing.Size(395, 67);
@@ -251,14 +261,14 @@ namespace UserInterface
             // 
             // TbTelNo
             // 
-            this.TbTelNo.Location = new System.Drawing.Point(154, 70);
+            this.TbTelNo.Location = new System.Drawing.Point(161, 70);
             this.TbTelNo.Name = "TbTelNo";
             this.TbTelNo.Size = new System.Drawing.Size(151, 23);
             this.TbTelNo.TabIndex = 1;
             // 
             // TbEmail
             // 
-            this.TbEmail.Location = new System.Drawing.Point(152, 27);
+            this.TbEmail.Location = new System.Drawing.Point(161, 27);
             this.TbEmail.Name = "TbEmail";
             this.TbEmail.Size = new System.Drawing.Size(218, 23);
             this.TbEmail.TabIndex = 0;
@@ -269,8 +279,9 @@ namespace UserInterface
             this.BtnRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.BtnRegister.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.BtnRegister.FlatAppearance.BorderSize = 0;
-            this.BtnRegister.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.BtnRegister.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue;
             this.BtnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnRegister.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnRegister.ForeColor = System.Drawing.Color.White;
             this.BtnRegister.Image = ((System.Drawing.Image)(resources.GetObject("BtnRegister.Image")));
             this.BtnRegister.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -297,7 +308,7 @@ namespace UserInterface
             this.Controls.Add(this.groupBox1);
             this.Name = "RegisterUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RegisterUI";
+            this.Text = "Kayıt Ol";
             this.Load += new System.EventHandler(this.RegisterUI_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -20,6 +20,7 @@ namespace Business.Concrete
         // SQL Ekleme fonksiyonu
         public IResult Add(Account account)
         {
+            
             _accountDal.Add(account);
             return new SuccessResult("Üyelik Oluşturuldu!");
         }

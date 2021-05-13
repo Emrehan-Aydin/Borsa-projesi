@@ -46,7 +46,7 @@ namespace UserInterface
             DgSaleOrderDetails.Columns[1].HeaderText = "Ürün Adı";
             DgSaleOrderDetails.Columns[2].HeaderText = "Birim fiyat";
             DgSaleOrderDetails.Columns[3].HeaderText = "Adet";
-            DgSaleOrderDetails.Columns[4].HeaderText = "UId";
+            DgSaleOrderDetails.Columns[4].HeaderText = "User Id";
             DgSaleOrderDetails.Columns[5].HeaderText = "Ad";
             DgSaleOrderDetails.Columns[6].HeaderText = "Soyad";
         }
@@ -57,7 +57,7 @@ namespace UserInterface
             DgSaleOrderDetails.Columns[1].HeaderText = "Ürün Adı";
             DgSaleOrderDetails.Columns[2].HeaderText = "Birim fiyat";
             DgSaleOrderDetails.Columns[3].HeaderText = "Adet";
-            DgSaleOrderDetails.Columns[4].HeaderText = "UId";
+            DgSaleOrderDetails.Columns[4].HeaderText = "User Id";
             DgSaleOrderDetails.Columns[5].HeaderText = "Ad";
             DgSaleOrderDetails.Columns[6].HeaderText = "Soyad";
         }

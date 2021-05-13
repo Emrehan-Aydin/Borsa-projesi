@@ -53,7 +53,7 @@ namespace UserInterface
             DwPurchaseOrder.Columns[0].HeaderText = "İşlem Id";
             DwPurchaseOrder.Columns[1].HeaderText = "Ürün Adı";
             DwPurchaseOrder.Columns[2].HeaderText = "Adet";
-            DwPurchaseOrder.Columns[3].HeaderText = "UId";
+            DwPurchaseOrder.Columns[3].HeaderText = "User Id";
             DwPurchaseOrder.Columns[4].HeaderText = "Ad";
             DwPurchaseOrder.Columns[5].HeaderText = "Soyad";
         }
@@ -65,7 +65,7 @@ namespace UserInterface
             DwPurchaseOrder.Columns[0].HeaderText = "İşlem Id";
             DwPurchaseOrder.Columns[1].HeaderText = "Ürün Adı";
             DwPurchaseOrder.Columns[2].HeaderText = "Adet";
-            DwPurchaseOrder.Columns[3].HeaderText = "UId";
+            DwPurchaseOrder.Columns[3].HeaderText = "User Id";
             DwPurchaseOrder.Columns[4].HeaderText = "Ad";
             DwPurchaseOrder.Columns[5].HeaderText = "Soyad";
         }

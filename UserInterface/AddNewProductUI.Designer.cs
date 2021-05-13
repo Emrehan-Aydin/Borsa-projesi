@@ -51,11 +51,11 @@ namespace UserInterface
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(11, 90);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 19);
+            this.label5.Size = new System.Drawing.Size(80, 16);
             this.label5.TabIndex = 19;
             this.label5.Text = "Miktar (Kg)";
             // 
@@ -63,11 +63,11 @@ namespace UserInterface
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(11, 50);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 19);
+            this.label4.Size = new System.Drawing.Size(75, 16);
             this.label4.TabIndex = 18;
             this.label4.Text = "Ürün Seçin";
             // 
@@ -78,7 +78,7 @@ namespace UserInterface
             this.CbProductList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CbProductList.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CbProductList.FormattingEnabled = true;
-            this.CbProductList.Location = new System.Drawing.Point(143, 50);
+            this.CbProductList.Location = new System.Drawing.Point(143, 46);
             this.CbProductList.Name = "CbProductList";
             this.CbProductList.Size = new System.Drawing.Size(164, 25);
             this.CbProductList.TabIndex = 17;
@@ -97,7 +97,7 @@ namespace UserInterface
             this.BtnAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.BtnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.MidnightBlue;
             this.BtnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAdd.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.BtnAdd.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.BtnAdd.ForeColor = System.Drawing.Color.White;
             this.BtnAdd.Image = ((System.Drawing.Image)(resources.GetObject("BtnAdd.Image")));
             this.BtnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -116,10 +116,11 @@ namespace UserInterface
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(57, 10);
+            this.label1.Location = new System.Drawing.Point(29, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 15);
+            this.label1.Size = new System.Drawing.Size(266, 16);
             this.label1.TabIndex = 21;
             this.label1.Text = "Stoğuza Eklemek istediğiniz ürünü seçin";
             // 
@@ -139,7 +140,7 @@ namespace UserInterface
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AddNewProductUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddNewProductUI";
+            this.Text = "Ürün Ekle";
             this.Load += new System.EventHandler(this.AddNewProductUI_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
