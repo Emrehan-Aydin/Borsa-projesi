@@ -38,7 +38,7 @@ Yerel bir Database içerisinde çalışan bir program geliştirdik.
 ![image](https://user-images.githubusercontent.com/78824631/118274741-2e6ba000-b4ce-11eb-98a8-9564cb93266d.png)
 
   ### Bakiye Ekleme Formu
-     Sistem TL üzerinden çalışamtadır. Eklenilen Tutar TL olarak İstek gönderebilir.
+     Sistem TL üzerinden çalışmaktadır. Eklenilen Tutar TL olarak İstek gönderebilir.
 
 ![image](https://user-images.githubusercontent.com/78824631/118274859-54914000-b4ce-11eb-87fb-c352bc28f6f5.png)
 
