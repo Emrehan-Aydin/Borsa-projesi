@@ -56,7 +56,8 @@ Yerel bir Database içerisinde çalışan bir program geliştirdik.
 ![image](https://user-images.githubusercontent.com/78824631/118275459-1ba59b00-b4cf-11eb-8364-2876e5170c7c.png)
   
   ### Kullanıcı Rapor Formu
-     Kullanıcılar Alım ve Satım Geçmişlerini Önizleyebilirler ve PDF olarak çıktı alabilirler.
+     Kullanıcılar Alım ve Satım Geçmişlerini Zamana, İşleme (Alım,Satım veya her ikisi) olarak filtreleyip
+     Önizleyebilirler ve PDF olarak çıktı alabilirler.
 
 ![image](https://user-images.githubusercontent.com/78824631/122639364-21138800-d102-11eb-88ed-bd3f5f2ffd18.png)
   ### Admin Anasayfa Formu
