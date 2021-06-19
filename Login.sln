@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Busine
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserInterface", "UserInterface\UserInterface.csproj", "{15689102-5FFC-4E1C-B1F4-647D900AB0D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopBusiness", "ShopBusiness\ShopBusiness.csproj", "{306FD5E4-AFE2-4B8E-99AD-7F13CD8E10CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopBusiness", "ShopBusiness\ShopBusiness.csproj", "{306FD5E4-AFE2-4B8E-99AD-7F13CD8E10CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -25,13 +25,13 @@ namespace DataAccess.Concrete.EntityFramework
                              select new PurchaseOrderDto
                              {
                                  IslemNo = purchase.Id,
-                                 ProductName = product.ProductName,
+                                 ProductName = product.ProductName,                                 
+                                 UnitPrice = Decimal.Round(purchase.UnitPrice,2),
                                  CountOfProduct = purchase.Count,
                                  UserId = accountinfo.Id,
                                  Buyerad = accountinfo.Name,
                                  Buyersoyad = accountinfo.Surname
                              };
-
                 return result.ToList();
             }
         }
@@ -50,12 +50,12 @@ namespace DataAccess.Concrete.EntityFramework
                              {
                                  IslemNo = purchase.Id,
                                  ProductName = product.ProductName,
+                                 UnitPrice = Decimal.Round(purchase.UnitPrice, 2),
                                  CountOfProduct = purchase.Count,
                                  UserId = accountinfo.Id,
                                  Buyerad = accountinfo.Name,
                                  Buyersoyad = accountinfo.Surname
                              };
-
                 return result.ToList();
             }
         }

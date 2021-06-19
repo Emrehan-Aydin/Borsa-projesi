@@ -22,20 +22,21 @@ namespace ShopBusiness
                 var buyer = accountFinanceManager.GetByAccount(purchases.BuyerId).Data;
                 foreach (var sales in saleOrderManager.GetByProductId(purchases.ProductId).Data.OrderBy(p => p.UnitPrice).ToList()) // İlgili satış emirleri
                 {
-                    if (purchases.BuyerId == sales.SellerId)
+                    if (purchases.BuyerId == sales.SellerId || purchases.UnitPrice < sales.UnitPrice)
                     {
                         continue;
                     }
-                    int count = 0, checkMoney = 0; // Satın Alınan ürün ve tutar değeri
+                    int count = 0; // Satın Alınan ürün 
+                    decimal checkMoney = 0.0000m; // tutar değeri
                     for (int i = 0; i < sales.StockOfProduct; i++)
                     {
                         // Satın Alınan miktar ve tutar değeri hesaplaması
                         count++;
-                        checkMoney += sales.UnitPrice;
+                        checkMoney += (sales.UnitPrice + (sales.UnitPrice/100));
 
                         if (checkMoney > buyer.Cash) // Tutar kontrolü
                         {
-                            checkMoney -= sales.UnitPrice;
+                            checkMoney -= (sales.UnitPrice + (sales.UnitPrice / 100));
                             count--;
                             break;
                         }
@@ -63,7 +64,7 @@ namespace ShopBusiness
                 }
             }
         }
-        public void buy(int count, int checkMoney, PurchaseOrder purchase, SaleOrder sale)
+        public void buy(int count, decimal checkMoney, PurchaseOrder purchase, SaleOrder sale)
         {
             // satın alınan varlık
             AccountAsset buyyerAsset = new AccountAsset
@@ -90,7 +91,7 @@ namespace ShopBusiness
             log(count, checkMoney, purchase, sale);
         }
 
-        public void log(int count, int checkMoney, PurchaseOrder purchase, SaleOrder sale)
+        public void log(int count, decimal checkMoney, PurchaseOrder purchase, SaleOrder sale)
         {
             // İlgili log işlemin veritabanı kayıt işlemi
             ShopHistoryManager shopHistoryManager = new ShopHistoryManager(new EfShopHistoryDal());
@@ -100,7 +101,8 @@ namespace ShopBusiness
                 SellerId = sale.SellerId,
                 ProductId = purchase.ProductId,
                 CountOfProduct = count,
-                TotalPrice = count * sale.UnitPrice
+                TotalPrice = checkMoney,
+                TransactionDate = DateTime.Now   
             };
             shopHistoryManager.Add(shopHistory);
         }

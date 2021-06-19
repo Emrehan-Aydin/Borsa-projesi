@@ -28,7 +28,7 @@ namespace DataAccess.Concrete.EntityFramework
                                  IslemNo = sales.Id,
                                  ProductName = product.ProductName,
                                  CountOfProduct = sales.StockOfProduct,
-                                 UnitPrice = sales.UnitPrice,
+                                 UnitPrice = Decimal.Round(sales.UnitPrice,2),
                                  UserId = accountinfo.Id,
                                  SellerAd = accountinfo.Name,
                                  Sellersoyad = accountinfo.Surname
@@ -52,7 +52,7 @@ namespace DataAccess.Concrete.EntityFramework
                                  IslemNo = sales.Id,
                                  ProductName = product.ProductName,
                                  CountOfProduct = sales.StockOfProduct,
-                                 UnitPrice = sales.UnitPrice,
+                                 UnitPrice = Decimal.Round(sales.UnitPrice, 2),
                                  UserId = accountinfo.Id,
                                  SellerAd = accountinfo.Name,
                                  Sellersoyad = accountinfo.Surname

@@ -31,9 +31,12 @@ namespace UserInterface
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CashAddUI));
             this.label1 = new System.Windows.Forms.Label();
-            this.TxCountOfProduct = new System.Windows.Forms.TextBox();
+            this.Tb_UnitMoney = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.BtnBuy = new System.Windows.Forms.Button();
+            this.Cb_UnitMoney = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.Lb_CalculateMoney = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -42,20 +45,21 @@ namespace UserInterface
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(35, 50);
+            this.label1.Location = new System.Drawing.Point(26, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(119, 16);
             this.label1.TabIndex = 11;
             this.label1.Text = "Yüklenecek Tutar";
             // 
-            // TxCountOfProduct
+            // Tb_UnitMoney
             // 
-            this.TxCountOfProduct.BackColor = System.Drawing.Color.White;
-            this.TxCountOfProduct.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TxCountOfProduct.Location = new System.Drawing.Point(174, 50);
-            this.TxCountOfProduct.Name = "TxCountOfProduct";
-            this.TxCountOfProduct.Size = new System.Drawing.Size(100, 16);
-            this.TxCountOfProduct.TabIndex = 14;
+            this.Tb_UnitMoney.BackColor = System.Drawing.Color.White;
+            this.Tb_UnitMoney.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Tb_UnitMoney.Location = new System.Drawing.Point(26, 69);
+            this.Tb_UnitMoney.Name = "Tb_UnitMoney";
+            this.Tb_UnitMoney.Size = new System.Drawing.Size(119, 23);
+            this.Tb_UnitMoney.TabIndex = 14;
+            this.Tb_UnitMoney.TextChanged += new System.EventHandler(this.Tb_UnitMoney_TextChanged);
             // 
             // label2
             // 
@@ -86,16 +90,47 @@ namespace UserInterface
             this.BtnBuy.ForeColor = System.Drawing.Color.White;
             this.BtnBuy.Image = ((System.Drawing.Image)(resources.GetObject("BtnBuy.Image")));
             this.BtnBuy.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnBuy.Location = new System.Drawing.Point(-1, 93);
+            this.BtnBuy.Location = new System.Drawing.Point(-1, 119);
             this.BtnBuy.Margin = new System.Windows.Forms.Padding(0);
             this.BtnBuy.Name = "BtnBuy";
             this.BtnBuy.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BtnBuy.Size = new System.Drawing.Size(308, 65);
+            this.BtnBuy.Size = new System.Drawing.Size(308, 39);
             this.BtnBuy.TabIndex = 16;
             this.BtnBuy.Text = "Gönder";
             this.BtnBuy.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnBuy.UseVisualStyleBackColor = false;
             this.BtnBuy.Click += new System.EventHandler(this.BtnBuy_Click);
+            // 
+            // Cb_UnitMoney
+            // 
+            this.Cb_UnitMoney.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Cb_UnitMoney.FormattingEnabled = true;
+            this.Cb_UnitMoney.Location = new System.Drawing.Point(186, 69);
+            this.Cb_UnitMoney.Name = "Cb_UnitMoney";
+            this.Cb_UnitMoney.Size = new System.Drawing.Size(83, 23);
+            this.Cb_UnitMoney.TabIndex = 17;
+            this.Cb_UnitMoney.SelectedIndexChanged += new System.EventHandler(this.Cb_UnitMoney_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(186, 50);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(40, 16);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "Birim";
+            // 
+            // Lb_CalculateMoney
+            // 
+            this.Lb_CalculateMoney.AutoSize = true;
+            this.Lb_CalculateMoney.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Lb_CalculateMoney.ForeColor = System.Drawing.SystemColors.Info;
+            this.Lb_CalculateMoney.Location = new System.Drawing.Point(26, 95);
+            this.Lb_CalculateMoney.Name = "Lb_CalculateMoney";
+            this.Lb_CalculateMoney.Size = new System.Drawing.Size(0, 16);
+            this.Lb_CalculateMoney.TabIndex = 19;
             // 
             // CashAddUI
             // 
@@ -104,9 +139,12 @@ namespace UserInterface
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(15)))), ((int)(((byte)(53)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(304, 158);
+            this.Controls.Add(this.Lb_CalculateMoney);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.Cb_UnitMoney);
             this.Controls.Add(this.BtnBuy);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.TxCountOfProduct);
+            this.Controls.Add(this.Tb_UnitMoney);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "CashAddUI";
@@ -121,8 +159,11 @@ namespace UserInterface
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TxCountOfProduct;
+        private System.Windows.Forms.TextBox Tb_UnitMoney;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button BtnBuy;
+        private System.Windows.Forms.ComboBox Cb_UnitMoney;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label Lb_CalculateMoney;
     }
 }

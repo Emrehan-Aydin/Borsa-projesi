@@ -10,7 +10,7 @@ namespace Entities.Concrete
         public int Id { get; set; }
         public int ProductId { get; set; }
         public int StockOfProduct { get; set; }
-        public int UnitPrice { get; set; }
+        public decimal UnitPrice { get; set; }
         public int SellerId { get; set; }
 
     }

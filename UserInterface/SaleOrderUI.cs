@@ -16,7 +16,7 @@ namespace UserInterface
     public partial class SaleOrderUI : Form
     {
         SaleOrderManager saleOrderManager = new SaleOrderManager(new EfSaleOrderDal());
-        List<SaleOrderDto> saleOrderDto;
+
         Account _account;
         public SaleOrderUI(Account account)
         {
@@ -42,7 +42,7 @@ namespace UserInterface
         private void GetDataGridView()
         {
             DgSaleOrderDetails.DataSource = saleOrderManager.GetByAccountDetails(_account).Data;
-            DgSaleOrderDetails.Columns[0].HeaderText = "İşlem Id";
+            DgSaleOrderDetails.Columns[0].Visible = false;
             DgSaleOrderDetails.Columns[1].HeaderText = "Ürün Adı";
             DgSaleOrderDetails.Columns[2].HeaderText = "Birim fiyat";
             DgSaleOrderDetails.Columns[3].HeaderText = "Adet";
@@ -53,7 +53,7 @@ namespace UserInterface
         private void GetAdminDataGridView()
         {
             DgSaleOrderDetails.DataSource = saleOrderManager.GetDetails().Data; ;
-            DgSaleOrderDetails.Columns[0].HeaderText = "İşlem Id";
+            DgSaleOrderDetails.Columns[0].Visible = false;
             DgSaleOrderDetails.Columns[1].HeaderText = "Ürün Adı";
             DgSaleOrderDetails.Columns[2].HeaderText = "Birim fiyat";
             DgSaleOrderDetails.Columns[3].HeaderText = "Adet";

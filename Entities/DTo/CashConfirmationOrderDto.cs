@@ -7,6 +7,6 @@ namespace Entities.DTo
         public string Tc { get; set; }
         public string Ad { get; set; }
         public string Soyad { get; set; }
-        public int PendingCash { get; set; }
+        public decimal PendingCash { get; set; }
     }
 }

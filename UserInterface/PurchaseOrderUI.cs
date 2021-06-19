@@ -18,7 +18,7 @@ namespace UserInterface
         PurchaseOrderManager purchaseOrderManager = new PurchaseOrderManager(new EfPurchaseOrderDal());
         AccountAsset accountAsset = new AccountAsset();
         Account _account;
-        List<PurchaseOrderDto> _purchaseOrderDto;
+
         public PurchaseOrderUI(Account account)
         {
             // İlgili account nesnesi
@@ -50,24 +50,26 @@ namespace UserInterface
             // Dto  Aktar
             DwPurchaseOrder.DataSource = purchaseOrderManager.GetByAccountDetail(_account).Data;
             // Dgw başlıklar set edilmesi
-            DwPurchaseOrder.Columns[0].HeaderText = "İşlem Id";
+            DwPurchaseOrder.Columns[0].Visible = false;
             DwPurchaseOrder.Columns[1].HeaderText = "Ürün Adı";
-            DwPurchaseOrder.Columns[2].HeaderText = "Adet";
-            DwPurchaseOrder.Columns[3].HeaderText = "User Id";
-            DwPurchaseOrder.Columns[4].HeaderText = "Ad";
-            DwPurchaseOrder.Columns[5].HeaderText = "Soyad";
+            DwPurchaseOrder.Columns[2].HeaderText = "Birim Fiyat";
+            DwPurchaseOrder.Columns[3].HeaderText = "Adet";
+            DwPurchaseOrder.Columns[4].HeaderText = "User Id";
+            DwPurchaseOrder.Columns[5].HeaderText = "Ad";
+            DwPurchaseOrder.Columns[6].HeaderText = "Soyad";
         }
         private void GetAdminDwDatas()
         {
             // Dto  Aktar
             DwPurchaseOrder.DataSource = purchaseOrderManager.GetPurchaseOrderDetail().Data;
             // Dgw başlıklar set edilmesi
-            DwPurchaseOrder.Columns[0].HeaderText = "İşlem Id";
+            DwPurchaseOrder.Columns[0].Visible = false;
             DwPurchaseOrder.Columns[1].HeaderText = "Ürün Adı";
-            DwPurchaseOrder.Columns[2].HeaderText = "Adet";
-            DwPurchaseOrder.Columns[3].HeaderText = "User Id";
-            DwPurchaseOrder.Columns[4].HeaderText = "Ad";
-            DwPurchaseOrder.Columns[5].HeaderText = "Soyad";
+            DwPurchaseOrder.Columns[2].HeaderText = "Birim Fiyat";
+            DwPurchaseOrder.Columns[3].HeaderText = "Adet";
+            DwPurchaseOrder.Columns[4].HeaderText = "User Id";
+            DwPurchaseOrder.Columns[5].HeaderText = "Ad";
+            DwPurchaseOrder.Columns[6].HeaderText = "Soyad";
         }
 
         private void BtnBackUp_Click(object sender, EventArgs e)

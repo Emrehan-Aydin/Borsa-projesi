@@ -9,6 +9,6 @@ namespace Entities.Concrete
     {
         public int Id { get; set; }
         public int AccountId { get; set; }
-        public int PendingCash { get; set; }
+        public decimal PendingCash { get; set; }
     }
 }

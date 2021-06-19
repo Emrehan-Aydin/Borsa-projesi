@@ -2,6 +2,7 @@
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTo;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -26,7 +27,14 @@ namespace Business.Concrete
         // SQL Tümünü Listele fonksiyonu
         public IDataResult<List<ShopHistory>> GetAll()
         {
-            throw new NotImplementedException();
+            var result = _shopHistoryDal.GetAll();
+            return new SuccessDataResult<List<ShopHistory>>(result);
+        }
+
+        public IDataResult<List<TradeHistoryDetailsDto>> GetDetails(int Id)
+        {
+            var result = _shopHistoryDal.GetTradeDetails(Id);
+            return new SuccessDataResult<List<TradeHistoryDetailsDto>>(result);
         }
     }
 }

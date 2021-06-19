@@ -26,7 +26,7 @@ namespace DataAccess.Concrete.EntityFramework
                                 Tc=accountinfo.Tc_No,
                                 Ad=accountinfo.Name,
                                 Soyad=accountinfo.Surname,
-                                PendingCash=cash.PendingCash
+                                PendingCash= Decimal.Round(cash.PendingCash, 2)
                              };
                 return result.ToList();
             }

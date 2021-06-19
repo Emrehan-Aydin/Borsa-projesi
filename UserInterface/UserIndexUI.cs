@@ -85,7 +85,7 @@ namespace UserInterface
             saleOrder.ProductId = productManager.GetAll().Data.SingleOrDefault(p => p.ProductName == CbMyProductList.SelectedItem.ToString()).Id;
             saleOrder.SellerId = _account.Id;
             saleOrder.StockOfProduct = Convert.ToInt32(TbMyProductCount.Text);
-            saleOrder.UnitPrice = Convert.ToInt32(TbMyPriceOfProduct.Text);
+            saleOrder.UnitPrice = Convert.ToDecimal(TbMyPriceOfProduct.Text);
             // Satış nesnesi yönetim nesnesi
             SaleOrderManager saleOrderManager = new SaleOrderManager(new EfSaleOrderDal());
             // Kontrol ve ekleme işlemi
@@ -145,6 +145,7 @@ namespace UserInterface
             PurchaseOrder purchaseOrder = new PurchaseOrder();
             purchaseOrder.ProductId = productManager.GetAll().Data.SingleOrDefault(p => p.ProductName == CbProductList.SelectedItem.ToString()).Id;
             purchaseOrder.BuyerId = _account.Id;
+            purchaseOrder.UnitPrice = Convert.ToDecimal(TBuyPriceOfProduct.Text);
             purchaseOrder.Count = Convert.ToInt32(TbProductCount.Text);
             // Alım varlık nesnesinin yönetim nesnesi ve ekleme.
             PurchaseOrderManager purchaserManager = new PurchaseOrderManager(new EfPurchaseOrderDal());
@@ -159,6 +160,12 @@ namespace UserInterface
         {
             CheckShop checkShop = new CheckShop();
             checkShop.checkSaleAndPurchase();
+        }
+
+        private void Btn_TransactionHistoryPage_Click(object sender, EventArgs e)
+        {
+            TradeHistoryPage tradeHistoryPage = new TradeHistoryPage(_account);
+            tradeHistoryPage.ShowDialog();
         }
     }
 }

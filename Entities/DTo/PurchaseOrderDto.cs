@@ -9,6 +9,7 @@ namespace Entities.DTo
     {
         public int IslemNo { get; set; }
         public string ProductName { get; set; }
+        public decimal UnitPrice { get; set; }
         public int CountOfProduct { get; set; }
         public int UserId { get; set; }
         public string Buyerad { get; set; }

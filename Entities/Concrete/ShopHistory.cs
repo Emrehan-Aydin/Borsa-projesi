@@ -12,6 +12,7 @@ namespace Entities.Concrete
         public int SellerId { get; set; }
         public int ProductId { get; set; }
         public int CountOfProduct { get; set; }
-        public int TotalPrice { get; set; }
+        public decimal TotalPrice { get; set; }
+        public DateTime TransactionDate { get; set; }
     }
 }
