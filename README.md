@@ -39,7 +39,8 @@ Yerel bir Database içerisinde çalışan bir program geliştirdik.
 ![image](https://user-images.githubusercontent.com/78824631/122639303-c11ce180-d101-11eb-8702-a0a0e9d2bc82.png)
 
   ### Bakiye Ekleme Formu
-     Sistem TL üzerinden çalışmaktadır. Seçilen herhangi bir birim WEB üzerinden anlık birim fiyatını TL olarak çevirir ve bakiye ekleme İsteği gönderebilir.
+     Sistem TL üzerinden çalışmaktadır. 
+     Seçilen herhangi bir birim WEB üzerinden anlık birim fiyatını TL olarak çevirir ve bakiye ekleme İsteği gönderebilir.
 
 ![image](https://user-images.githubusercontent.com/78824631/122639341-f7f2f780-d101-11eb-8604-a575750eaa3b.png)
 
@@ -49,7 +50,8 @@ Yerel bir Database içerisinde çalışan bir program geliştirdik.
 ![image](https://user-images.githubusercontent.com/78824631/118274989-80acc100-b4ce-11eb-856e-f3684c9e4eed.png)
 
   ### İşlemde Olan Ürün Alım ve Satım Emir Formu
-     Kullanıcılar Alım ve Satım Emirlerini geri çekebilmektedir. Listede yazan Stok bilgisi Kadar Ürün geri ALınabilmektedir.
+     Kullanıcılar Alım ve Satım Emirlerini geri çekebilmektedir.
+     Listede yazan Stok bilgisi Kadar Ürün geri ALınabilmektedir.
 
 ![image](https://user-images.githubusercontent.com/78824631/118275459-1ba59b00-b4cf-11eb-8364-2876e5170c7c.png)
   
