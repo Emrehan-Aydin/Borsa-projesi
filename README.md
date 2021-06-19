@@ -35,7 +35,7 @@ Yerel bir Database içerisinde çalışan bir program geliştirdik.
   ### Kullanıcı Anasayfa Formu
      Kullanıcı olarak giriş yaptığımızda karşılaşacağımız form.
 
-![image](https://user-images.githubusercontent.com/78824631/118274741-2e6ba000-b4ce-11eb-98a8-9564cb93266d.png)
+![image](https://user-images.githubusercontent.com/78824631/122639303-c11ce180-d101-11eb-8702-a0a0e9d2bc82.png)
 
   ### Bakiye Ekleme Formu
      Sistem TL üzerinden çalışmaktadır. Eklenilen Tutar TL olarak İstek gönderebilir.
