@@ -40,7 +40,7 @@ Yerel bir Database içerisinde çalışan bir program geliştirdik.
   ### Bakiye Ekleme Formu
      Sistem TL üzerinden çalışmaktadır. Eklenilen Tutar TL olarak İstek gönderebilir.
 
-![image](https://user-images.githubusercontent.com/78824631/118274859-54914000-b4ce-11eb-87fb-c352bc28f6f5.png)
+![image](https://user-images.githubusercontent.com/78824631/122639341-f7f2f780-d101-11eb-8604-a575750eaa3b.png)
 
   ### Ürün Ekleme Formu
      Kullanıcı kendi stoğuna seçimlerini yapıp miktar belirterek İstek gönderebilir.
