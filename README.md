@@ -12,7 +12,7 @@ Yerel bir Database içerisinde çalışan bir program geliştirdik.
 ## Projemiz bünyesinde bulundurduğumuz seneryolar ;
 * Sisteme Kayıt Olabilme.
 * Sisteme ( Kullanıcı - Yönetici ) Giriş Yapabilme.
-* Sisteme Bakiye Eklemek.
+* Sisteme Bakiye (Farklı birimler desteklemektedir.) Eklemek.
 * Sisteme Ürün Ekleme.
 * Ürün Alım ve Satım Emri Verebilmek.
 * Alım ve Satım Emirlerini Geri Alabilmek.
@@ -33,12 +33,13 @@ Yerel bir Database içerisinde çalışan bir program geliştirdik.
 ![image](https://user-images.githubusercontent.com/78824631/118274576-f82e2080-b4cd-11eb-8a28-551c85b98a67.png)
 
   ### Kullanıcı Anasayfa Formu
-     Kullanıcı olarak giriş yaptığımızda karşılaşacağımız form.
+     Kullanıcı olarak giriş yaptığımızda karşılaşacağımız form. Buradan Kullanıcılar Tüm metotlara erişebilmektedir.
+     (Alım Emri, Satım Emri , Bakiye Ekleme, Ürün Ekleme...)
 
 ![image](https://user-images.githubusercontent.com/78824631/122639303-c11ce180-d101-11eb-8702-a0a0e9d2bc82.png)
 
   ### Bakiye Ekleme Formu
-     Sistem TL üzerinden çalışmaktadır. Eklenilen Tutar TL olarak İstek gönderebilir.
+     Sistem TL üzerinden çalışmaktadır. Seçilen herhangi bir birim WEB üzerinden anlık birim fiyatını TL olarak çevirir ve bakiye ekleme İsteği gönderebilir.
 
 ![image](https://user-images.githubusercontent.com/78824631/122639341-f7f2f780-d101-11eb-8604-a575750eaa3b.png)
 
